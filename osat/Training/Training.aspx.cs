@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace osat
+namespace osat.Training
 {
     public partial class Training : System.Web.UI.Page
     {

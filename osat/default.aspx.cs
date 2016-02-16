@@ -17,7 +17,7 @@ namespace osat
 
         protected void btn_train_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Training.aspx");
+            Response.Redirect("Training/TrainingMenu.aspx");
         }
     }
 }

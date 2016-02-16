@@ -130,7 +130,8 @@
     <Content Include="scripts\bootstrap.min.js" />
     <Content Include="scripts\jquery-1.9.1.js" />
     <Content Include="scripts\jquery-1.9.1.min.js" />
-    <Content Include="Training.aspx" />
+    <Content Include="Training\Training.aspx" />
+    <Content Include="Training\TrainingMenu.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -145,12 +146,19 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Training.aspx.cs">
+    <Compile Include="Training\Training.aspx.cs">
       <DependentUpon>Training.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Training.aspx.designer.cs">
+    <Compile Include="Training\Training.aspx.designer.cs">
       <DependentUpon>Training.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Training\TrainingMenu.aspx.cs">
+      <DependentUpon>TrainingMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Training\TrainingMenu.aspx.designer.cs">
+      <DependentUpon>TrainingMenu.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

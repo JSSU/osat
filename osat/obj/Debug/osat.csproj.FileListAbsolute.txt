@@ -31,3 +31,36 @@ C:\Users\Junsu.Shen\Documents\Visual Studio 2015\Projects\osat\osat\bin\Microsof
 C:\Users\Junsu.Shen\Documents\Visual Studio 2015\Projects\osat\osat\obj\Debug\osat.csprojResolveAssemblyReference.cache
 C:\Users\Junsu.Shen\Documents\Visual Studio 2015\Projects\osat\osat\obj\Debug\osat.dll
 C:\Users\Junsu.Shen\Documents\Visual Studio 2015\Projects\osat\osat\obj\Debug\osat.pdb
+R:\Projects\VS 2015\OSAT\osat\osat\bin\ApplicationInsights.config
+R:\Projects\VS 2015\OSAT\osat\osat\bin\roslyn\csc.exe
+R:\Projects\VS 2015\OSAT\osat\osat\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+R:\Projects\VS 2015\OSAT\osat\osat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+R:\Projects\VS 2015\OSAT\osat\osat\bin\roslyn\Microsoft.CodeAnalysis.dll
+R:\Projects\VS 2015\OSAT\osat\osat\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+R:\Projects\VS 2015\OSAT\osat\osat\bin\roslyn\Microsoft.CSharp.Core.targets
+R:\Projects\VS 2015\OSAT\osat\osat\bin\roslyn\Microsoft.VisualBasic.Core.targets
+R:\Projects\VS 2015\OSAT\osat\osat\bin\roslyn\System.Collections.Immutable.dll
+R:\Projects\VS 2015\OSAT\osat\osat\bin\roslyn\System.Reflection.Metadata.dll
+R:\Projects\VS 2015\OSAT\osat\osat\bin\roslyn\vbc.exe
+R:\Projects\VS 2015\OSAT\osat\osat\bin\roslyn\VBCSCompiler.exe
+R:\Projects\VS 2015\OSAT\osat\osat\bin\roslyn\VBCSCompiler.exe.config
+R:\Projects\VS 2015\OSAT\osat\osat\bin\osat.dll.config
+R:\Projects\VS 2015\OSAT\osat\osat\bin\osat.dll
+R:\Projects\VS 2015\OSAT\osat\osat\bin\osat.pdb
+R:\Projects\VS 2015\OSAT\osat\osat\bin\Microsoft.AI.Agent.Intercept.dll
+R:\Projects\VS 2015\OSAT\osat\osat\bin\Microsoft.AI.DependencyCollector.dll
+R:\Projects\VS 2015\OSAT\osat\osat\bin\Microsoft.AI.PerfCounterCollector.dll
+R:\Projects\VS 2015\OSAT\osat\osat\bin\Microsoft.AI.ServerTelemetryChannel.dll
+R:\Projects\VS 2015\OSAT\osat\osat\bin\Microsoft.AI.Web.dll
+R:\Projects\VS 2015\OSAT\osat\osat\bin\Microsoft.AI.WindowsServer.dll
+R:\Projects\VS 2015\OSAT\osat\osat\bin\Microsoft.ApplicationInsights.dll
+R:\Projects\VS 2015\OSAT\osat\osat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+R:\Projects\VS 2015\OSAT\osat\osat\bin\Microsoft.AI.DependencyCollector.xml
+R:\Projects\VS 2015\OSAT\osat\osat\bin\Microsoft.AI.ServerTelemetryChannel.xml
+R:\Projects\VS 2015\OSAT\osat\osat\bin\Microsoft.AI.Web.xml
+R:\Projects\VS 2015\OSAT\osat\osat\bin\Microsoft.AI.WindowsServer.xml
+R:\Projects\VS 2015\OSAT\osat\osat\bin\Microsoft.ApplicationInsights.xml
+R:\Projects\VS 2015\OSAT\osat\osat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+R:\Projects\VS 2015\OSAT\osat\osat\obj\Debug\osat.csprojResolveAssemblyReference.cache
+R:\Projects\VS 2015\OSAT\osat\osat\obj\Debug\osat.dll
+R:\Projects\VS 2015\OSAT\osat\osat\obj\Debug\osat.pdb
