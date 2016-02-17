@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="OSATModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'DPW_OBC_Prequal.dbo.dpw_osat_Class_Status' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="dpw_osat_Class_Status">
+          <Property Name="Class Status" Type="nvarchar" MaxLength="255" />
+          <Property Name="ID" Type="int" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'DPW_OBC_Prequal.dbo.dpw_osat_Course' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="dpw_osat_Course">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="DESCRIPTION" Type="nvarchar" MaxLength="255" />
+          <Property Name="CREATE DATE" Type="datetime" />
+          <Property Name="LAST UPDATED DATE" Type="datetime" />
+          <Property Name="CREATE USER" Type="nvarchar" MaxLength="255" />
+          <Property Name="LAST UPDATED USER" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'DPW_OBC_Prequal.dbo.dpw_osat_Division' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="dpw_osat_Division">
+          <Property Name="Division" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'DPW_OBC_Prequal.dbo.dpw_osat_Employee Status' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="dpw_osat_Employee Status">
+          <Property Name="Class Status" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'DPW_OBC_Prequal.dbo.dpw_osat_Employees' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="dpw_osat_Employees">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="DEPTID" Type="nvarchar" MaxLength="255" />
+          <Property Name="[Last Name" Type="nvarchar" MaxLength="255" />
+          <Property Name="First Name" Type="nvarchar" MaxLength="255" />
+          <Property Name="Middle Init" Type="nvarchar" MaxLength="255" />
+          <Property Name="Name Suffix" Type="nvarchar" MaxLength="255" />
+          <Property Name="Gender" Type="nvarchar" MaxLength="255" />
+          <Property Name="Emp Date" Type="datetime" />
+          <Property Name="Title" Type="nvarchar" MaxLength="255" />
+          <Property Name="Division" Type="nvarchar" MaxLength="255" />
+          <Property Name="Section" Type="nvarchar" MaxLength="255" />
+          <Property Name="Class Status" Type="nvarchar" MaxLength="255" />
+          <Property Name="Create Date" Type="datetime" />
+          <Property Name="Last Updated Date" Type="datetime" />
+          <Property Name="Create User" Type="nvarchar" MaxLength="255" />
+          <Property Name="Last Updated User" Type="nvarchar" MaxLength="255" />
+          <Property Name="Comments" Type="nvarchar" MaxLength="1000" />
+          <Property Name="Ethnic Group" Type="nvarchar" MaxLength="255" />
+          <Property Name="RehireDate" Type="datetime" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'DPW_OBC_Prequal.dbo.dpw_osat_positions' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="dpw_osat_positions">
+          <Property Name="ID" Type="int" />
+          <Property Name="Position" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'DPW_OBC_Prequal.dbo.dpw_osat_Section' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="dpw_osat_Section">
+          <Property Name="Section" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'DPW_OBC_Prequal.dbo.dpw_osat_Training' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="dpw_osat_Training">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="ID-EMP-TAB" Type="nvarchar" MaxLength="255" />
+          <Property Name="ID-TYPE-TAB" Type="nvarchar" MaxLength="255" />
+          <Property Name="STARTED DATE" Type="datetime" />
+          <Property Name="END-DATE" Type="datetime" />
+          <Property Name="CREATE DATE" Type="datetime" />
+          <Property Name="LAST UPDATED DATE" Type="datetime" />
+          <Property Name="CREATE USER" Type="nvarchar" MaxLength="255" />
+          <Property Name="LAST UPDATE USER" Type="nvarchar" MaxLength="255" />
+          <Property Name="Comments" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityContainer Name="OSATModelStoreContainer">
+          <EntitySet Name="dpw_osat_Course" EntityType="Self.dpw_osat_Course" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [dpw_osat_Course].[ID] AS [ID], 
+    [dpw_osat_Course].[DESCRIPTION] AS [DESCRIPTION], 
+    [dpw_osat_Course].[CREATE DATE] AS [CREATE DATE], 
+    [dpw_osat_Course].[LAST UPDATED DATE] AS [LAST UPDATED DATE], 
+    [dpw_osat_Course].[CREATE USER] AS [CREATE USER], 
+    [dpw_osat_Course].[LAST UPDATED USER] AS [LAST UPDATED USER]
+    FROM [dbo].[dpw_osat_Course] AS [dpw_osat_Course]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="dpw_osat_Employees" EntityType="Self.dpw_osat_Employees" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [dpw_osat_Employees].[ID] AS [ID], 
+    [dpw_osat_Employees].[DEPTID] AS [DEPTID], 
+    [dpw_osat_Employees].[[Last Name] AS [[Last Name], 
+    [dpw_osat_Employees].[First Name] AS [First Name], 
+    [dpw_osat_Employees].[Middle Init] AS [Middle Init], 
+    [dpw_osat_Employees].[Name Suffix] AS [Name Suffix], 
+    [dpw_osat_Employees].[Gender] AS [Gender], 
+    [dpw_osat_Employees].[Emp Date] AS [Emp Date], 
+    [dpw_osat_Employees].[Title] AS [Title], 
+    [dpw_osat_Employees].[Division] AS [Division], 
+    [dpw_osat_Employees].[Section] AS [Section], 
+    [dpw_osat_Employees].[Class Status] AS [Class Status], 
+    [dpw_osat_Employees].[Create Date] AS [Create Date], 
+    [dpw_osat_Employees].[Last Updated Date] AS [Last Updated Date], 
+    [dpw_osat_Employees].[Create User] AS [Create User], 
+    [dpw_osat_Employees].[Last Updated User] AS [Last Updated User], 
+    [dpw_osat_Employees].[Comments] AS [Comments], 
+    [dpw_osat_Employees].[Ethnic Group] AS [Ethnic Group], 
+    [dpw_osat_Employees].[RehireDate] AS [RehireDate]
+    FROM [dbo].[dpw_osat_Employees] AS [dpw_osat_Employees]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="dpw_osat_Training" EntityType="Self.dpw_osat_Training" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [dpw_osat_Training].[ID] AS [ID], 
+    [dpw_osat_Training].[ID-EMP-TAB] AS [ID-EMP-TAB], 
+    [dpw_osat_Training].[ID-TYPE-TAB] AS [ID-TYPE-TAB], 
+    [dpw_osat_Training].[STARTED DATE] AS [STARTED DATE], 
+    [dpw_osat_Training].[END-DATE] AS [END-DATE], 
+    [dpw_osat_Training].[CREATE DATE] AS [CREATE DATE], 
+    [dpw_osat_Training].[LAST UPDATED DATE] AS [LAST UPDATED DATE], 
+    [dpw_osat_Training].[CREATE USER] AS [CREATE USER], 
+    [dpw_osat_Training].[LAST UPDATE USER] AS [LAST UPDATE USER], 
+    [dpw_osat_Training].[Comments] AS [Comments]
+    FROM [dbo].[dpw_osat_Training] AS [dpw_osat_Training]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="OSATModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="dpw_osat_Course">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+          <Property Name="LAST_UPDATED_DATE" Type="DateTime" Precision="3" />
+          <Property Name="CREATE_USER" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="LAST_UPDATED_USER" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="dpw_osat_Employees">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="DEPTID" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="C_Last_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="First_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Middle_Init" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Name_Suffix" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Gender" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Emp_Date" Type="DateTime" Precision="3" />
+          <Property Name="Title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Division" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Section" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Class_Status" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Create_Date" Type="DateTime" Precision="3" />
+          <Property Name="Last_Updated_Date" Type="DateTime" Precision="3" />
+          <Property Name="Create_User" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Last_Updated_User" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Comments" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="Ethnic_Group" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="RehireDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="dpw_osat_Training">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="ID_EMP_TAB" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="ID_TYPE_TAB" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="STARTED_DATE" Type="DateTime" Precision="3" />
+          <Property Name="END_DATE" Type="DateTime" Precision="3" />
+          <Property Name="CREATE_DATE" Type="DateTime" Precision="3" />
+          <Property Name="LAST_UPDATED_DATE" Type="DateTime" Precision="3" />
+          <Property Name="CREATE_USER" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="LAST_UPDATE_USER" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Comments" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="DPW_OBC_PrequalEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="dpw_osat_Course" EntityType="Self.dpw_osat_Course" />
+          <EntitySet Name="dpw_osat_Employees" EntityType="Self.dpw_osat_Employees" />
+          <EntitySet Name="dpw_osat_Training" EntityType="Self.dpw_osat_Training" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="OSATModelStoreContainer" CdmEntityContainer="DPW_OBC_PrequalEntities">
+          <EntitySetMapping Name="dpw_osat_Course">
+            <EntityTypeMapping TypeName="OSATModel.dpw_osat_Course">
+              <MappingFragment StoreEntitySet="dpw_osat_Course">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE DATE" />
+                <ScalarProperty Name="LAST_UPDATED_DATE" ColumnName="LAST UPDATED DATE" />
+                <ScalarProperty Name="CREATE_USER" ColumnName="CREATE USER" />
+                <ScalarProperty Name="LAST_UPDATED_USER" ColumnName="LAST UPDATED USER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="dpw_osat_Employees">
+            <EntityTypeMapping TypeName="OSATModel.dpw_osat_Employees">
+              <MappingFragment StoreEntitySet="dpw_osat_Employees">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DEPTID" ColumnName="DEPTID" />
+                <ScalarProperty Name="C_Last_Name" ColumnName="[Last Name" />
+                <ScalarProperty Name="First_Name" ColumnName="First Name" />
+                <ScalarProperty Name="Middle_Init" ColumnName="Middle Init" />
+                <ScalarProperty Name="Name_Suffix" ColumnName="Name Suffix" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="Emp_Date" ColumnName="Emp Date" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Division" ColumnName="Division" />
+                <ScalarProperty Name="Section" ColumnName="Section" />
+                <ScalarProperty Name="Class_Status" ColumnName="Class Status" />
+                <ScalarProperty Name="Create_Date" ColumnName="Create Date" />
+                <ScalarProperty Name="Last_Updated_Date" ColumnName="Last Updated Date" />
+                <ScalarProperty Name="Create_User" ColumnName="Create User" />
+                <ScalarProperty Name="Last_Updated_User" ColumnName="Last Updated User" />
+                <ScalarProperty Name="Comments" ColumnName="Comments" />
+                <ScalarProperty Name="Ethnic_Group" ColumnName="Ethnic Group" />
+                <ScalarProperty Name="RehireDate" ColumnName="RehireDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="dpw_osat_Training">
+            <EntityTypeMapping TypeName="OSATModel.dpw_osat_Training">
+              <MappingFragment StoreEntitySet="dpw_osat_Training">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ID_EMP_TAB" ColumnName="ID-EMP-TAB" />
+                <ScalarProperty Name="ID_TYPE_TAB" ColumnName="ID-TYPE-TAB" />
+                <ScalarProperty Name="STARTED_DATE" ColumnName="STARTED DATE" />
+                <ScalarProperty Name="END_DATE" ColumnName="END-DATE" />
+                <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE DATE" />
+                <ScalarProperty Name="LAST_UPDATED_DATE" ColumnName="LAST UPDATED DATE" />
+                <ScalarProperty Name="CREATE_USER" ColumnName="CREATE USER" />
+                <ScalarProperty Name="LAST_UPDATE_USER" ColumnName="LAST UPDATE USER" />
+                <ScalarProperty Name="Comments" ColumnName="Comments" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
